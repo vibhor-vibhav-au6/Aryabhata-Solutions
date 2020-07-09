@@ -1,4 +1,5 @@
 # Aryabhata Solutions Git repo
+You can find the code/project files for CCs or Assignments in their respective weekXX/dayXX folder.
 
 ## Links for CCs and Assignments discussion videos
 
