@@ -19,6 +19,8 @@ class Solution:
         # return arr       
         return ["Fizz" * ( not i % 3) + "Buzz" * (not i % 5) or str(i) for i in range(1,n+1)]
 
+##################################################
+
 
 #  https://leetcode.com/problems/reverse-integer
 # a = abs(123)
@@ -38,6 +40,9 @@ class Solution:
         else:
             return 0
 
+
+############################################################
+
 # . Given a string print all the vovels present in i
 def CheckVow(string):
   final = []
@@ -51,3 +56,11 @@ string = "the quick brown fox jumped over the lazy old dog"
 
 # a = input('enter string')
 CheckVow(string); 
+
+################################################################
+
+# Given a string apple banana sum check for space present in it
+
+string = 'apple banana sum'
+if ' ' in string: print ('space present')
+else: print('space not present')
