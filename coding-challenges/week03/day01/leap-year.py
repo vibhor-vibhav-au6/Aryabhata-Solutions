@@ -22,3 +22,5 @@ class Solution:
             d = d + calender[i]
 
         return d
+
+# https://docs.microsoft.com/en-us/office/troubleshoot/excel/determine-a-leap-year
