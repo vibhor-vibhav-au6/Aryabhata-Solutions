@@ -1,4 +1,5 @@
 # https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1
+# iterative soln
 def reverseList(head):
     curr = head
     prev = None
@@ -9,6 +10,19 @@ def reverseList(head):
         curr = Next
     head = prev
     return head
+# recursive soln:
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        if head == None or head.next == None:
+            newHead = head
+            return newHead
+        
+        cur = self.reverseList(head.next) // pointing to New Head
+        head.next.next = head
+        head.next = None
+        return cur
+
+        
 
 # https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1
 def getCount(head_node):
