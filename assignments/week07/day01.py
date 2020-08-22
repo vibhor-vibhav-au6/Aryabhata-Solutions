@@ -50,3 +50,11 @@ class Queue:
 # q.dequeue()
 # q.dequeue()
 # q.dequeue()
+
+
+def iot(self, root):
+    if root :
+        self.iot(root.left)
+        print(root.val)
+        self.iot(root.right)
+    return

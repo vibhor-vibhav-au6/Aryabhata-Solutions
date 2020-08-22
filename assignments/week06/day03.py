@@ -17,7 +17,7 @@ class Solution:
             newHead = head
             return newHead
         
-        cur = self.reverseList(head.next) // pointing to New Head
+        cur = self.reverseList(head.next) 
         head.next.next = head
         head.next = None
         return cur
