@@ -1,4 +1,4 @@
-class QNode:
+class Node:
   def __init__(self, val):
     self.val = val
     self.next = None
@@ -16,7 +16,7 @@ class Queue:
       return False
 
   def enqueue(self, val):
-    cur = QNode(val)
+    cur = Node(val)
 
     if self.tail == None:
       self.tail=self.head=cur
@@ -52,9 +52,3 @@ class Queue:
 # q.dequeue()
 
 
-def iot(self, root):
-    if root :
-        self.iot(root.left)
-        print(root.val)
-        self.iot(root.right)
-    return
